@@ -1,0 +1,25 @@
+
+<script type="text/javascript">
+ $(document).ready(function() {
+
+			$("#c1").click(function(){
+				$.XYTipsWindow.removeBox();
+			});
+			$("#aaa").click(function(){
+
+				$.XYTipsWindow({
+					___width:250,
+					___height:100,
+					___title:"我是从第一个窗里弹出的",
+					___drag:"___boxTitle",
+					___offsets:{left:"30px",top:"50px"}
+				});
+			});
+ })
+ </script>
+
+
+  <h3>我是测试文件: <br />test.html里的内容</h3>
+  <button id="c1">关闭</button><button id="aaa">弹出2</button>
+
+
